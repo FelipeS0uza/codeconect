@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeConect</title>
+</head>
+
+<body>
+    <!-- <aside>
+        <img src="assets/logo-code-conect.svg" alt="Logo da Code conect">
+        <nav>
+            <ul class="lista-links">
+                <li>
+                    <a href="#" class="link-destaque">Publicar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/feed.svg">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/account_circle.svg">
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/info.svg">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/logout.svg">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside> -->
+
+
+    <main>
+        <div class="container-upload-imagem">
+            <div class="container-imagem">
+                <img src="assets/code_editor.png" alt="" class="main-imagem">
+            </div>
+            <button id="upload-btn">Carregar imagem</button>
+            <input type="file" id="imagem-upload" accept="image/*" style="display: none">
+            <div class="container-imagem-nome">
+                <p>imagem_projeto.png</p>
+                <img src="assets/close.svg">
+            </div>
+        </div>
+        <div class="container-descricao">
+            <h2>Novo Projeto</h2>
+            <form action="" id="cadastro-form">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <span id="erro-nome" class="erro"></span>
+                </div>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                    <span id="erro-descricao" class="erro"></span>
+                </div>
+                <div>
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags" name="tags">
+                    <span id="erro-tags" class="erro"></span>
+                </div>
+                <ul class="lista-tags">
+                    <li>
+                        <p>Front-end</p>
+                        <img src="assets/close_black.svg">
+                    </li>
+                </ul>
+
+                <div class="container-botoes">
+                    <button class="botao-descartar">
+                        Descartar
+                    </button>
+                    <button type="submit" class="botao-publicar">
+                        Publicar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
